@@ -5,23 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="index.js" defer></script>
+  <script src="https://kit.fontawesome.com/d6eed24291.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Launch countdown timer</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; display: none;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  We're launching soon
+  <main>
+    <h1 class="heading">We're launching soon</h1>
+    <div class="timer-container">
+      <div class="days">
+        <div class="shapes">
+          <div class="top-half"><p class="top-half-text" id="day-top"></p></div>
+          <div class="bottom-half"><p class="bottom-half-text" id="day-bottom"></div>
+          <div class="left-half-circle"></div>
+          <div class="right-half-circle"></div>
+        </div>
+        <p class="card-title">days</p>
+      </div>
+      <div class="hours">
+        <div class="shapes">
+          <div class="top-half"><p class="top-half-text" id="hour-top"></p></div>
+          <div class="bottom-half"><p class="bottom-half-text" id="hour-bottom"></div>
+          <div class="left-half-circle"></div>
+          <div class="right-half-circle"></div>
+        </div>
+        <p class="card-title">Hours</p>
+      </div>
+      <div class="minutes">
+        <div class="shapes">
+          <div class="top-half"><p class="top-half-text" id="minute-top"></p></div>
+          <div class="bottom-half"><p class="bottom-half-text" id="minute-bottom"></div>
+          <div class="left-half-circle"></div>
+          <div class="right-half-circle"></div>
+        </div>
+        <p class="card-title">Minutes</p>
+      </div>
+      <div class="seconds">
+        <div class="shapes sec-shape">
+          <div class="top-half"><p class="top-half-text" id="second-top"></p></div>
+          <div class="bottom-half"><p class="bottom-half-text" id="second-bottom"></div>
+          <div class="left-half-circle"></div>
+          <div class="right-half-circle"></div>
+        </div>
+        <p class="card-title">seconds</p>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#"> <i class="fa-brands fa-square-facebook"></i> </a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#"> <i class="fa-brands fa-instagram"></i></a>
 
-  Days
-  Hours
-  Minutes
-  Seconds
+    </div>
+  </main>
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
