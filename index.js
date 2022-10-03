@@ -10,9 +10,7 @@ const minuteBottom = document.getElementById("minute-bottom");
 const secondBottom = document.getElementById("second-bottom");
 
 
-// time unit containers on which transitions will be applied
-const topHalf = document.querySelectorAll(".top-half");
-const bottomHalf = document.querySelectorAll(".bottom-half");
+//containers on which transitions will be applied
 const shape = document.querySelector(".sec-shape")
 let id = null;
 let deg = 0;
@@ -59,13 +57,10 @@ var x = setInterval(function() {
 function trans(){
     if (deg > 360) {
         clearInterval(y);
-        // shape.style.transform =  `rotateX(0deg)`;
       } else {
         deg += 10;
         shape.style.transform =  `rotateX(${deg}deg)`;
-        // topHalf.forEach(half =>{
-        //     half.style.transform = `rotateX(${deg}deg)`;
-        // });
+   
       }
 } 
   // If the count down is finished, write some text
